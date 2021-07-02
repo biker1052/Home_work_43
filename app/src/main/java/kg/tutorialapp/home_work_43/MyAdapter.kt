@@ -4,7 +4,6 @@ package kg.tutorialapp.home_work_43
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import drawable.BaseVievHolder
 import kg.tutorialapp.home_work_43.MyAdapter.Type.ITEM
 
 class MyAdapter:RecyclerView.Adapter<BaseVievHolder<Any>>() {
