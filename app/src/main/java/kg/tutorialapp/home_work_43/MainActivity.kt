@@ -1,4 +1,5 @@
 package kg.tutorialapp.home_work_43
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -18,11 +19,12 @@ class MainActivity : AppCompatActivity() {
         val recyclerViev = findViewById<RecyclerView>(R.id.recyclerView)
         val btn1 = findViewById<Button>(R.id.button)
         val txt = findViewById<EditText>(R.id.editText)
+
         recyclerViev.adapter = myAdapter
-        setup(btn1,txt)
+        setup(btn1, txt)
     }
 
-    private fun setup(btn1:Button,txt:TextView) {
+    private fun setup(btn1: Button, txt: TextView) {
         btn1.setOnClickListener {
             list.add(Item(i++, txt.text.toString()))
             setupData()
